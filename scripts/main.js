@@ -51,10 +51,10 @@ const model = {
 // ##                          View                             ##
 // ############################################################### <div></div>
 
-updateView();
-function updateView() { 
-    document.getElementById('app').innerHTML = `
 
+function ViewIndex() { 
+    document.getElementById('app').innerHTML = `
+        ViewIndex() Running
     `;
 }
 
