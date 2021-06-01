@@ -1,0 +1,54 @@
+
+body {
+    font-family: Helvetica;
+}
+
+
+
+div.headerWrap {
+    background-color: rgb(128, 128, 128);
+    margin: 10px;
+    text-align: center;
+
+}
+
+div.headerTop {
+    height: 60px;
+    padding: 10px;
+}
+
+
+
+
+
+/* Navigation Bar */
+div.headerBot {
+    background-color: rgb(190, 190, 190);
+    height: 40px;
+}
+
+.navBar {
+    height: 40px;
+}
+
+.navBar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+.floatRight {
+    float: right;
+}
+
+.navbar:hover a:hover {
+    background-color: rgb(47, 0, 255);
+}
+
+.hoverRed:hover a:hover {
+    background-color: rgb(218, 218, 218);
+    height: 16px;
+}
+  /* End Navigation Bar */
