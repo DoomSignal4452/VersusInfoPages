@@ -3,7 +3,20 @@ body {
     font-family: Helvetica;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
 
+.spacer {
+    height: 5mm;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* IMPORTANT: REMOVE ALL PX MEASURMENTS!! */
 
 div.headerWrap {
     background-color: rgb(128, 128, 128);
@@ -58,3 +71,30 @@ a:hover {
     color: rgb(56, 56, 56);
 }
   /* End Navigation Bar */
+
+
+/* Information Boxes */
+
+.infoBox {
+    margin: auto;
+    width: 70%;
+    border: solid 1mm;
+    border-radius: 5mm;
+    border-color: black;
+    padding: 5mm;
+}
+
+.infoBoxWide {
+    min-width: 10cm;
+    max-width: 25cm;
+}
+
+.infoBoxNarrow {
+    min-width: 5cm;
+    max-width: 7cm;
+}
+
+.infoBoxMid {
+    min-width: 5cm;
+    max-width: 15cm;
+}

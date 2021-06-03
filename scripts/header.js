@@ -1,6 +1,6 @@
-showHeader()
+ViewHeader()
 
-function showHeader() {
+function ViewHeader() {
     document.getElementById('header').innerHTML = `
     <div class=headerWrap>
 
