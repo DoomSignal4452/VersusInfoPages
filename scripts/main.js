@@ -13,6 +13,13 @@ const model = {
         },
     },
 
+    tempStyles: {
+        TeamBuilder: {
+            ListSelection: '',
+            TeamSelection: '',
+        },
+    },
+
     frontPage: {
         monsterSpot: {
             selectMon: '',
@@ -23,9 +30,7 @@ const model = {
         selectMon:  '',
 
         team: [
-            {},
-            {},
-            {},
+
         ],
 
         weakness: {
@@ -58,7 +63,7 @@ function ViewIndex() {
 
     //      infoShortAbout: Must write up info about game and short info about the sorld. Needs worldbuilding.
 
-    //      infoGmaeVersion: Add a seperate model for storing info, to look at and excange easily? Also set up a page solely for "patch notees"
+    //      infoGmaeVersion: Add a seperate model for storing info, to look at and excange easily? Also set up a page solely for "patch notes"
 
     //      infoRandomMon: Add controller to choose presented monster. Info about monsters needs to be added to MonsterList.js.
 
@@ -130,8 +135,26 @@ function ViewIndex() {
 
 function ViewTeamBuild() {
     document.getElementById('app').innerHTML = `
-    ViewTeamBuild() Running
-`;
+    <div id="infoTeamBuilder" class="infoBox infoBoxWide">
+            <h2>infoTeamBuilder</h2>
+
+            <div class="spacer"></div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet diam a neque euismod, blandit consectetur leo dapibus. 
+                Duis feugiat enim quis leo aliquet tempus. Cras finibus est est, quis laoreet lorem gravida ut. Vestibulum ante ipsum primis 
+                in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sit amet diam leo. Etiam imperdiet congue molestie. Maecenas 
+                tristique metus nulla, quis fermentum nunc placerat nec. Vestibulum finibus vestibulum dolor id gravida.
+            </p>
+
+        </div>
+
+        <div class="spacer"></div>
+
+        ${MakeTeamBuilder()}
+
+        `;
+
 }
 
 

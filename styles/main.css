@@ -98,3 +98,19 @@ a:hover {
     min-width: 5cm;
     max-width: 15cm;
 }
+
+
+/* TeamBuilder - Monster List */
+
+.TBMonsterList {
+    padding: 1mm;
+    font-size: 105%;
+}
+
+.TBSelected {
+    border: black;
+}
+
+.TBMonsterList:hover {
+    background-color: darkgrey;
+}
