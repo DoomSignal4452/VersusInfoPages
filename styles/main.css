@@ -154,3 +154,7 @@ a:hover {
 .TBMonsterTeam:hover {
     background-color: darkgrey;
 }
+
+.isSelected {
+    background-color: lightgray;
+}

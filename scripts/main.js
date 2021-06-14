@@ -30,13 +30,11 @@ const model = {
         select: {
             list:  {},
             team: {},
-            markerList: '',
-            markerTeam: '',
         },
 
         marker: {
-            list: '',
-            team: '',
+            list: undefined,
+            team: undefined,
         },
 
         team: [
