@@ -8,8 +8,8 @@ const Monster = [
         AttackMax: 10, 
         CritChance: 30, 
         DodgeRate: 10, 
-        Element: 'Neutral', 
-        Affinity: 'Normal', 
+        Element: 'Normal', 
+        Affinity: 'Neutral', 
         Picture: "picWIP.png" 
     },
 
@@ -65,7 +65,7 @@ const Monster = [
         CritChance: 20, 
         DodgeRate: 20, 
         Element: 'Water', 
-        Affinity: 'Normal', 
+        Affinity: 'Neutral', 
         Picture: "picWIP.png" 
     },
 
@@ -107,7 +107,7 @@ const Monster = [
         CritChance: 60, 
         DodgeRate: 15, 
         Element: 'Fire', 
-        Affinity: 'Normal', 
+        Affinity: 'Neutral', 
         Picture: "picWIP.png" 
     },
     

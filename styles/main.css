@@ -1,7 +1,10 @@
 
 body {
     font-family: Helvetica;
+    background-color: lightgray;
 }
+
+
 
 p {
     margin: 0;
@@ -76,6 +79,7 @@ a:hover {
 /* Information Boxes */
 
 .infoBox {
+    background-color: rgb(238, 237, 237);
     margin: auto;
     width: 70%;
     border: solid 1mm;
@@ -102,6 +106,25 @@ a:hover {
 
 /* TeamBuilder - Monster List */
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+/*.scrollingList::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+/*.scrollingList {
+    -ms-overflow-style: none;  /* IE and Edge */
+/*    scrollbar-width: none;  /* Firefox */
+/*  } */
+
+.scrollingList {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 7cm;
+}
+
+
+
 .TBMonsterList {
     padding: 1mm;
     font-size: 105%;
@@ -112,5 +135,22 @@ a:hover {
 }
 
 .TBMonsterList:hover {
+    background-color: darkgrey;
+}
+
+#TeamBox {
+    height: 6cm;
+}
+
+.TBMonsterTeam {
+    padding: 1mm;
+    font-size: 105%;
+}
+
+.TBMonsterTeamSelected {
+    border: black;
+}
+
+.TBMonsterTeam:hover {
     background-color: darkgrey;
 }
