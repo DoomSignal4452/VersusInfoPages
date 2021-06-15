@@ -1,77 +1,10 @@
-// ###############################################################
-// ##                          Model                            ##
-// ###############################################################
-
-const model = {
-    inputs: {
-        monsterList: {
-            search: '',
-        },
-
-        teamMaker: {
-            search: '',
-        },
-    },
-
-    tempStyles: {
-        TeamBuilder: {
-            ListSelection: '',
-            TeamSelection: '',
-        },
-    },
-
-    frontPage: {
-        monsterSpot: {
-            selectMon: '',
-        },
-    },
-
-    teamMaker: {
-        select: {
-            list:  {},
-            team: {},
-        },
-
-        marker: {
-            list: undefined,
-            team: undefined,
-        },
-
-        team: [
-
-        ],
-
-        weakness: {
-            monster: [],
-            element: [],
-            affinity: [],
-        },
-
-        strength: {
-            monster: [],
-            element: [],
-            affinity: [],
-        },
-    },
-
-    monsterList: {
-        selectMon:  '',
-    },
-}
-
-
-
-// ###############################################################
-// ##                          View                             ##
-// ############################################################### <div></div>
-
 
 function ViewIndex() {  
     // Notes: 
 
     //      infoShortAbout: Must write up info about game and short info about the sorld. Needs worldbuilding.
 
-    //      infoGmaeVersion: Add a seperate model for storing info, to look at and excange easily? Also set up a page solely for "patch notes"
+    //      infoGameVersion: Add a seperate model for storing info, to look at and excange easily? Also set up a page solely for "patch notes"
 
     //      infoRandomMon: Add controller to choose presented monster. Info about monsters needs to be added to MonsterList.js.
 
@@ -142,15 +75,4 @@ function ViewIndex() {
 
 
 
-
-
-function ViewMonsterList() {
-    document.getElementById('app').innerHTML = `
-    ViewMonsterList() Running
-`;
-}
-
-// ###############################################################
-// ##                       Controller                          ##
-// ############################################################### <div></div>
 

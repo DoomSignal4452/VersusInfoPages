@@ -19,6 +19,10 @@ h2 {
     margin: 0;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* IMPORTANT: REMOVE ALL PX MEASURMENTS!! */
 
 div.headerWrap {
@@ -136,6 +140,7 @@ a:hover {
 
 .TBMonsterList:hover {
     background-color: darkgrey;
+    cursor: pointer;
 }
 
 #TeamBox {
@@ -153,8 +158,19 @@ a:hover {
 
 .TBMonsterTeam:hover {
     background-color: darkgrey;
+    cursor: pointer;
 }
 
 .isSelected {
     background-color: lightgray;
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
