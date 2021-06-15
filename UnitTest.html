@@ -14,16 +14,72 @@
     <script src="scripts/ModelMain.js"></script>
     <script src="scripts/MonsterList.js"></script>
 
+    <script src="scripts/ContrlTeamBuilder.js"></script>
 
-    <script src="scripts/main.js"></script>
-
-    <script src="scripts/TeamBuilder.js"></script>
+<!--
+    Det skal være minst fire unit tester av controller-funksjoner:
+        - minst to som viser at funksjonene gjør som de skal med riktig input 
+        - minst to som viser at funksjonene takler ugyldig input på en god måte
+-->
 
     <script>
+        function ViewTeamBuild(){}
+
+        QUnit.test('Select Monster in Monster List', function(assert) {
+            SelectFromList('Monster5')
+            assert.equal(model.teamMaker.marker.list, 4, 'Selects 5th monster in list, at index 4');
+        });
+
+        QUnit.test('Add monster to Team', function(assert) {
+            model.teamMaker.team = [{ id: 08, Species: 'Meercat(WIP)', Health: 130, MagicPoints: 50, AttackMin: 4, AttackMax: 6, CritChance: 60, DodgeRate: 15, Element: 'Fire', Affinity: 'Neutral', Picture: "picWIP.png" },];
+            model.teamMaker.select.list = { id: 06, Species: 'Serpent(WIP)', Health: 160, MagicPoints: 90, AttackMin: 2, AttackMax: 3, CritChance: 50, DodgeRate: 5, Element: 'Wind', Affinity: 'Cold', Picture: "picWIP.png" };
+            AddToTeam();
+            assert.deepEqual(model.teamMaker.team, [
+                { id: 08, Species: 'Meercat(WIP)', Health: 130, MagicPoints: 50, AttackMin: 4, AttackMax: 6, CritChance: 60, DodgeRate: 15, Element: 'Fire', Affinity: 'Neutral', Picture: "picWIP.png" },
+                { id: 06, Species: 'Serpent(WIP)', Health: 160, MagicPoints: 90, AttackMin: 2, AttackMax: 3, CritChance: 50, DodgeRate: 5, Element: 'Wind', Affinity: 'Cold', Picture: "picWIP.png" }
+            ], 'Confirms that selected monster is added to Team List');
+        });
+
+        QUnit.test('Check that removeFromTeam() does not attempt to remove anything if it recieves invalid input', function(assert) {
+            model.teamMaker.marker.team = 'this is a string';
+            assert.equal(removeFromTeam(), false, 'A string returns "false".');
+
+            model.teamMaker.marker.team = 2;
+            assert.equal(removeFromTeam(), true, 'The number 2 is "true".');
+
+            model.teamMaker.marker.team = '2';
+            assert.equal(removeFromTeam(), false, 'The string 2 is "false".');
+
+            model.teamMaker.marker.team = 753;
+            assert.equal(removeFromTeam(), false, 'The number 753 is "false".');
+        });
+
+        QUnit.test('Check that isIselected(counter) correctly returns an empty string, checking against number 2.', function(assert) {
+            model.teamMaker.marker.team = 2;
+
+            assert.equal(isIselected(4256), '', 'Unexpected numbers returns an empty string.');
+            assert.equal(isIselected('2'), '', 'The string 2 returns an empty string.');
+            assert.equal(isIselected(2), 'isSelected', 'The number 2 returns "isSelected".');
+            assert.equal(isIselected(null), '', '"null" returns an empty string.');
+            assert.equal(isIselected(undefined), '', '"undefined" returns an empty string.');
+        });
+
+        QUnit.test('Check that isIselected(counter) correctly returns an empty string, checking against "undefined".', function(assert) {
+            model.teamMaker.marker.team = undefined;
+
+            assert.equal(isIselected(4256), '', 'Unexpected numbers returns an empty string.');
+            assert.equal(isIselected('2'), '', 'The string 2 returns an empty string.');
+            assert.equal(isIselected(2), '', 'The number 2 returns an empty string.');
+            assert.equal(isIselected(null), '', '"null" returns an empty string.');
+            assert.equal(isIselected(undefined), '', '"undefined" returns an empty string.');
+        });
 
 
+        </script>
+
+<!--
+    <script> 
     function updateView(){}
-
 
     QUnit.test('Velg stolpe 1', function(assert) {
         chooseBar(1)
@@ -56,7 +112,7 @@
         makeBar();
           assert.deepEqual(numbers, [1, 2, 3, 4, 5]);
     });
-
     </script>
+-->
 </body>
 </html>
