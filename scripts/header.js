@@ -11,13 +11,13 @@ function ViewHeader() {
             <div class="navBar">
                 <div class="hoverRed"><a href="index.html">Home</a></div>
 
-                <div class="hoverRed"><a href="/pages/MonsterList.html">Monster List</a></div>
+                <div class="hoverRed"><a href="pages/MonsterList.html">Monster List</a></div>
 
                 <div class="hoverRed"><a href="#">Elements & Affinity</a></div>
 
                 <div class="hoverRed"><a href="#">Ghosts: Special Monsters</a></div>
 
-                <div class="hoverRed"><a href="/pages/TeamBuilder.html">Team Builder</a></div>
+                <div class="hoverRed"><a href="pages/TeamBuilder.html">Team Builder</a></div>
 
                 <div class="hoverRed floatRight"><a href="#">About</a></div>
 
