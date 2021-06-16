@@ -15,11 +15,11 @@ function ViewHeader() {
 
                 <div class="hoverRed"><a href="pages/ElementsAndAffinity.html">Elements & Affinity</a></div>
 
-                <div class="hoverRed"><a href="#">Ghosts: Special Monsters</a></div>
+                <div class="hoverRed"><a href="pages/Ghosts.html">Ghosts: Special Monsters</a></div>
 
                 <div class="hoverRed"><a href="pages/TeamBuilder.html">Team Builder</a></div>
 
-                <div class="hoverRed floatRight"><a href="#">About</a></div>
+                <div class="hoverRed floatRight"><a href="pages/About.html">About</a></div>
 
             </div>
 
