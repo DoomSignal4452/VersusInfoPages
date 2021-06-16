@@ -1,6 +1,10 @@
 
 function ViewMonsterList() {
     document.getElementById('app').innerHTML = `
-    ViewMonsterList() Running
-`;
+        <div class="spacer"></div>
+
+        <div class="infoBox infoBoxWide">
+            ${BuildBigMonsterList()}
+        </div>
+    `;
 }
