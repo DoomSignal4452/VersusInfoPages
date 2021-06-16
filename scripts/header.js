@@ -13,7 +13,7 @@ function ViewHeader() {
 
                 <div class="hoverRed"><a href="pages/MonsterList.html">Monster List</a></div>
 
-                <div class="hoverRed"><a href="#">Elements & Affinity</a></div>
+                <div class="hoverRed"><a href="pages/ElementsAndAffinity.html">Elements & Affinity</a></div>
 
                 <div class="hoverRed"><a href="#">Ghosts: Special Monsters</a></div>
 
