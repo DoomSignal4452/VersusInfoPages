@@ -1,7 +1,7 @@
 const Monster = [
     { 
         id: 01, 
-        Species: 'Dog(WIP)', 
+        Species: 'Dog', 
         Health: 120, 
         MagicPoints: 80, 
         AttackMin: 5, 
@@ -15,7 +15,7 @@ const Monster = [
 
     { 
         id: 02, 
-        Species: 'Fox(WIP)', 
+        Species: 'Fox', 
         Health: 100, 
         MagicPoints: 80, 
         AttackMin: 8, 
@@ -29,7 +29,7 @@ const Monster = [
 
     { 
         id: 03, 
-        Species: 'Purryl(WIP)', 
+        Species: 'Purryl', 
         Health: 150, 
         MagicPoints: 50, 
         AttackMin: 2, 
@@ -43,7 +43,7 @@ const Monster = [
 
     { 
         id: 04, 
-        Species: 'Gecko(WIP)', 
+        Species: 'Gecko', 
         Health: 90, 
         MagicPoints: 90, 
         AttackMin: 5, 
@@ -57,7 +57,7 @@ const Monster = [
 
     { 
         id: 05, 
-        Species: 'Dinosaur(WIP)', 
+        Species: 'Dinosaur', 
         Health: 110, 
         MagicPoints: 70, 
         AttackMin: 3, 
@@ -71,7 +71,7 @@ const Monster = [
 
     { 
         id: 06, 
-        Species: 'Serpent(WIP)', 
+        Species: 'Serpent', 
         Health: 160, 
         MagicPoints: 90, 
         AttackMin: 2, 
@@ -85,7 +85,7 @@ const Monster = [
 
     { 
         id: 07, 
-        Species: 'Horse(WIP)', 
+        Species: 'Horse', 
         Health: 100, 
         MagicPoints: 100, 
         AttackMin: 8, 
@@ -99,7 +99,7 @@ const Monster = [
 
     { 
         id: 08, 
-        Species: 'Meercat(WIP)', 
+        Species: 'Meercat', 
         Health: 130, 
         MagicPoints: 50, 
         AttackMin: 4, 
@@ -113,7 +113,7 @@ const Monster = [
     
     { 
         id: 09, 
-        Species: 'Bird(WIP)', 
+        Species: 'Bird', 
         Health: 140, 
         MagicPoints: 40, 
         AttackMin: 1, 

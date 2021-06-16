@@ -38,7 +38,7 @@ function AddToTeam() {
 function BuildTeamList() { // Add element and affinity pics to show in list.
     let ML=``;
     let counter=0;
-    for(var i = 0;i<model.teamMaker.team.length;i++) {  //  onclick="SelectFromList(this.id)"
+    for(var i = 0;i<model.teamMaker.team.length;i++) {
 
         ML+=
         `<div id="Team${counter}" class="TBMonsterTeam ${isIselected(counter)}" onclick="SelectFromTeam(this.id)">
@@ -69,7 +69,7 @@ function isIselected(counter) {
 };
 
 function isIselectedList(counter) {
-    if (typeof model.teamMaker.marker.team != 'number') {return '';}
+    if (typeof model.teamMaker.marker.list != 'number') {return '';}
 
     else if(counter === model.teamMaker.marker.list) {return 'isSelected';}
 
