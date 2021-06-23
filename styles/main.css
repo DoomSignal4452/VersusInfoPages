@@ -193,3 +193,40 @@ a:hover {
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
+
+
+/* ########## Monster List ########## */
+
+.BigMonsterList {
+    /*margin-bottom: 0.2mm;*/
+    border: solid gray 0.6mm
+
+}
+
+.BM_small_pic {
+    width: 2cm;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 0.2mm;
+}
+
+tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+.slimTD {
+    width: 20mm;
+    height: 20mm;
+}
+
+.PadLeft {
+    padding-left: 2mm;
+}
