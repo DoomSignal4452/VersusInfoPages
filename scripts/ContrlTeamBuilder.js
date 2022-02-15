@@ -1,5 +1,5 @@
 
-function BuildMonsterList() { // Add element and affinity pics to show in list.
+function BuildMonsterList() { // TODO: Add element and affinity pics to show in list.
     let ML="";
     let counter=0;
     for(var i = 0;i<Monster.length;i++) {
@@ -86,3 +86,26 @@ function removeFromTeam() {
         return true;
     };
 };
+
+
+
+function buildTeamWeakness() { // Build a list of team weaknesses
+    let WeakList;
+    let counter=0;
+
+    for(var i = 0;i<model.teamMaker.team.length;i++) {
+
+        WeakList+=
+        `<div 
+        ${counter} 
+        ${isIselected(counter)}
+        ${model.teamMaker.team[i].Species}
+        ${model.teamMaker.team[i].Element}
+        ${model.teamMaker.team[i].Affinity}
+        </div>`
+        counter++;
+    }
+
+
+    console.log(WeakList);
+}
